@@ -80,8 +80,9 @@ def adding_matz
         :languages => ["C"]
       }
 	}
+	programmer_hash
 end
-programmer_hash
+
 
 
 def changing_alan
@@ -101,9 +102,9 @@ def changing_alan
         :languages => ["C"]
       }
     }
-end
-programmer_hash[:alan_kay][:known_for] = "GUI"
+    programmer_hash[:alan_kay][:known_for] = "GUI"
 programmer_hash
+end
 
 
 def adding_to_dennis
