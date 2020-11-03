@@ -15,12 +15,12 @@ def hopper
         :languages => ["C"]
       }
     }
-
+  
 end
+programmer_hash[:grace_hopper]
+
 
 def alan_kay_is_known_for
-	# What combination of keys would you use to return the value of the :known_for key of :alan_kay?
-	
 	programmer_hash = 
  		{
       :grace_hopper => {
@@ -38,6 +38,8 @@ def alan_kay_is_known_for
     }
 
 end
+programmer_hash[:alan_kay][:known_for]
+
 
 def dennis_ritchies_language
 	programmer_hash = 
@@ -55,19 +57,17 @@ def dennis_ritchies_language
         :languages => ["C"]
       }
     }
-
 end
+programmer_hash[:dennis_ritchie][:languages]
+
 
 def adding_matz
-# add the following information to the top level of programmer_hash
-# :yukihiro_matsumoto => {
-#   :known_for => "Ruby",
-#   :languages => ["LISP", "C"]
-# }
-# return the entire updated hash
-
 	programmer_hash = 
- 		{
+	{
+	:yukihiro_matsumoto => {
+	  :known_for => "Ruby",
+	  :languages => ["LISP", "c"]
+	},
       :grace_hopper => {
         :known_for => "COBOL",
         :languages => ["COBOL", "FORTRAN"]
@@ -80,13 +80,12 @@ def adding_matz
         :known_for => "Unix",
         :languages => ["C"]
       }
-    }
-
+	}
 end
+programmer_hash
+
 
 def changing_alan
-  # change what Alan Kay is :known_for to the value of the alans_new_info variable. 
-  # return the entire updated hash
 
 	programmer_hash = 
  		{
@@ -103,12 +102,12 @@ def changing_alan
         :languages => ["C"]
       }
     }
-
 end
+programmer_hash[:alan_kay][:known_for] = "GUI"
+programmer_hash
+
 
 def adding_to_dennis
-  # add "Assembly" to Dennis Ritchie's languages array
-  # return the entire updated hash
 
 	programmer_hash = 
  		{
@@ -125,5 +124,6 @@ def adding_to_dennis
         :languages => ["C"]
       }
     }
-
+    programmer_hash[:dennis_ritchie][:languages][1] = "Assembly"
 end
+programmer_hash
